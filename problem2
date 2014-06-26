@@ -1,0 +1,13 @@
+var x =0;
+var y =1;
+var sum = 0;
+
+for (var i=y; i<4000000; i=x+y) {
+    if (i%2===0) {
+        var sum = sum + i;
+    }
+    var x = y;
+    var y = i;
+}
+
+console.log(sum);
